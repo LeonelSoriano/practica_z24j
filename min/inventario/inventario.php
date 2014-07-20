@@ -41,7 +41,7 @@
                         <div class="dynamicContent" align="left">
                             <!--  <h1>Inicio</h1>-->
                             <!--<p><a href="seleccion_sicap.html" class="main-site">Principal</a></p>-->
-                            <h1><img src="../../images/seleccion_sicap_archivos/image002.jpg" alt="flickr" /><strong>                Módulo de Nómina | Apartado</strong></h1>
+                            <h1><img src="../../images/seleccion_sicap_archivos/image002.jpg" alt="flickr" /><strong>                Módulo de  Inventario | Producto y servicio</strong></h1>
 
                             <!-- Beginning of compulsory code below -->
                             <br/><br/>
