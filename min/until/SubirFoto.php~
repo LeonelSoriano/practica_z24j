@@ -3,7 +3,6 @@
 
 class SubirFoto
 {
-	private $_G;
     private $_name;
 
 
