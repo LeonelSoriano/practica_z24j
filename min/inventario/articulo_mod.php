@@ -271,7 +271,7 @@ if (isset($_POST['submit']))
                             <table>
                                 <tr>
                                     <td><input type="submit" value="Guardar datos" name="submit"></td>
-                                    <td><a href="articulo_ver.phpx"><input type="button" value="Ver datos"></a> </td>
+                                    <td><a href="articulo_ver.php"><input type="button" value="Ver datos"></a> </td>
                                     <td><a href="./../../min_menu.html"><input type="button" value="Atras"></a> </td>
 
                                 </tr>

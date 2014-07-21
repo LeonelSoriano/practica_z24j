@@ -91,7 +91,7 @@ text-decoration :none;
 }
 td{
     padding-bottom: 3px;
-    
+
 }
 
 #tmp{
@@ -103,7 +103,7 @@ background-color:#E7E7E7;
 	margin-bottom: 20px;
 }
 
-#logo h1 {	
+#logo h1 {
 	padding: 15px 0px 0px 50px;
 	font: normal 11px Arial;
 	font-weight: normal;
@@ -132,7 +132,7 @@ background-color:#E7E7E7;
 		color: #669ac6;
 		margin:0px;
 		padding-top:5px;
-		font-size: 1.3em;	
+		font-size: 1.3em;
 		font-weight: normal;
 		letter-spacing:-1px;
 
@@ -193,7 +193,7 @@ width:98%;
 		color: #669ac6;
 		margin-bottom: 10px;
 		font: normal 11px Arial;
-		font-weight: normal;		
+		font-weight: normal;
 }
 
 .right {
@@ -216,7 +216,7 @@ color:#5379B3;/*#669ac6;/* #665c46;/*669ac6;*/
 
 .clearboth {
     clear:both;
-    
+
 }
 
 
@@ -230,7 +230,7 @@ top:0px;
 left:1280px;
 margin:0 auto;
 background:transparent;
-} 
+}
 
 #resol h1 {
 background:none;
@@ -245,7 +245,7 @@ padding:0px;margin:0px;
 background:none;
 }
 
-.dottedline { 
+.dottedline {
 	width:100%;
 	border-top:dotted 1px #669ac6;
 	margin: 10px 0px 0px 0px;
@@ -256,7 +256,7 @@ background:none;
 	width:240px;
 	padding: 10px 10px 0px 0px;
 	border-right:dotted 1px #669ac6;
-	float:left;	
+	float:left;
 }
 
 .boxright {
@@ -269,7 +269,7 @@ background:none;
 
 li {
 /*background:transparent url(../images/square.gif) no-repeat left;
-list-style-type:none; 
+list-style-type:none;
 padding-left:7px;*/
 }
 
@@ -310,14 +310,14 @@ form label.text {
 	display:block;
 	float: left;
 	width: 40%;
-	text-align: right; 
+	text-align: right;
 	margin: 5px 0 0 0;
 	padding: 0.1em;
 }
 
-input.text, textarea.text,input.warning, textarea.warning  { 
-  border-color:#dadada; 
-  border-style:solid; 
+input.text, textarea.text,input.warning, textarea.warning  {
+  border-color:#dadada;
+  border-style:solid;
   border-width:1px;
   font: normal 11px Arial;
   margin:5px;
@@ -337,12 +337,12 @@ input {
 textarea{
         font: normal 11px Arial;
 	padding:0px 5px 0px 5px;
-              
+
 }
 select{
             font: normal 11px Arial;
 	padding:0px 5px 0px 5px;
-              
+
 }
 label{
         font-size:  small;
@@ -373,7 +373,7 @@ text-decoration: none;
 color: #a9a9a9;
 }
 
-#copyrightkit, #copyrightkit a {	
+#copyrightkit, #copyrightkit a {
 	margin: 0 auto;
 	text-align:right;
 	font: normal 11px Arial;
@@ -410,7 +410,7 @@ input.error{
     border-top-color: #669ac6;
 }
 .tab_select{
-    
+
     background-image:  url(../images/bg_hover.png);
     color: white
 }
@@ -448,7 +448,7 @@ overflow:scroll;}
 height:120px;
 overflow:scroll;}
 .boton {
-    
+
                     background-image:  url(../images/boton_azul.png);
                     color: white;
                     width: 90px;
@@ -477,7 +477,7 @@ overflow:scroll;}
 
 table.tablas-nuevas th {
     height: 30px;
-    text-align: center;
+
     padding-right: 3px;
     padding-left: 3px;
 }

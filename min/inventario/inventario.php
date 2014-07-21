@@ -1,7 +1,5 @@
 <?php
-header("Content-Type: text/html;charset=utf-8");
-ini_set('display_errors', 'On');
-ini_set('display_errors', 1);
+
 
 require_once ('../../db.php');
 include_once("../until/SubirFoto.php");

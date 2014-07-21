@@ -41,7 +41,7 @@
     
 <table border=none class="tablas-nuevas">
    
-    <tr id="tmp">
+    <tr >
         <th >Código</th>
         <th>Código Alias</th>
         <th>Descripción</th>
@@ -90,7 +90,7 @@
                     echo"<td><font color='black'>". $test['fecha_vencimiento']."</font></td>";
                     echo"<td><font color='black'>". $test['observacion']."</font></td>";
                     echo"<td> <a href ='articulo_mod.php?codigo=$id'>Modificar</a>";
-                    echo"<td> <a href ='cargo_del.php?codigo=$id'><center>Borrar</center></a>";
+                    echo"<td> <a href ='cargo_del.php?codigo=$id'>Borrar</a>";
                     echo "</tr>";
 		}
 	mysql_close($conn);
