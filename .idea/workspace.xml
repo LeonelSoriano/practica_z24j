@@ -26,9 +26,91 @@
       <file leaf-file-name="inventario.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/min/inventario/inventario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="136" selection-start="2896" selection-end="2896" vertical-scroll-proportion="0.3323217" vertical-offset="555" max-vertical-offset="4590">
+            <state line="87" column="0" selection-start="2665" selection-end="2665" vertical-scroll-proportion="0.38145694" vertical-offset="1278" max-vertical-offset="6264">
               <folding>
-                <marker date="1405893276568" expanded="true" signature="11054:11216" placeholder="insert into ..." />
+                <marker date="1405910797604" expanded="true" signature="1032:1081" placeholder="SELECT codig..mco_unidad..." />
+                <marker date="1405910797604" expanded="true" signature="1627:2977" placeholder="INSERT INTO ..." />
+                <marker date="1405910797604" expanded="true" signature="1627:2129" placeholder="INSERT INTO ..." />
+                <marker date="1405910797604" expanded="true" signature="1627:2129" placeholder="INSERT INTO ..." />
+                <marker date="1405910797604" expanded="true" signature="2679:2847" placeholder="insert into ..." />
+                <marker date="1405910797604" expanded="true" signature="3008:4256" placeholder="..." />
+                <marker date="1405910797604" expanded="true" signature="3008:3020" placeholder="..." />
+                <marker date="1405910797604" expanded="true" signature="3008:3020" placeholder="..." />
+                <marker date="1405910797604" expanded="true" signature="3025:4256" placeholder="..." />
+                <marker date="1405910797604" expanded="true" signature="4175:4256" placeholder="..." />
+                <marker date="1405910797604" expanded="true" signature="4198:4256" placeholder="{...}" />
+                <marker date="1405910797604" expanded="true" signature="7307:7343" placeholder="SELECT tipo ..min_tipo_inventario..." />
+                <marker date="1405910797604" expanded="true" signature="8256:8296" placeholder="SELECT descr..mco_unidad..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SubirFoto.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/min/until/SubirFoto.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="31" selection-start="1592" selection-end="1592" vertical-scroll-proportion="-44.0" vertical-offset="0" max-vertical-offset="2430">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compras.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/min/compras/compras.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="140" selection-start="2871" selection-end="2871" vertical-scroll-proportion="-13.2" vertical-offset="0" max-vertical-offset="3384">
+              <folding>
+                <marker date="1405893763718" expanded="true" signature="8503:8665" placeholder="insert into ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="61" selection-start="105" selection-end="105" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="288">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inventario_ver.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/min/inventario/inventario_ver.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="49" selection-start="1560" selection-end="1560" vertical-scroll-proportion="-0.95" vertical-offset="483" max-vertical-offset="1512">
+              <folding>
+                <marker date="1405893479193" expanded="true" signature="2597:2624" placeholder="SELECT * FRO..min_articulos..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="empresa.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/min/empresa/empresa.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="122" column="38" selection-start="4650" selection-end="4650" vertical-scroll-proportion="-8.55" vertical-offset="1683" max-vertical-offset="3204">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1405896019975" expanded="true" signature="528:636" placeholder="insert into ..." />
+                <marker date="1405896019975" expanded="true" signature="882:1001" placeholder="insert into ..." />
+                <marker date="1405896019975" expanded="true" signature="4351:4384" placeholder="SELECT tipo ..min_tipo_empresa..." />
+                <marker date="1405896019975" expanded="true" signature="4722:4797" placeholder="..." />
+                <marker date="1405896019975" expanded="true" signature="4722:4797" placeholder="..." />
+                <marker date="1405896019975" expanded="true" signature="4722:4797" placeholder="..." />
+                <marker date="1405896019975" expanded="true" signature="4919:5215" placeholder="..." />
+                <marker date="1405896019975" expanded="true" signature="4919:5215" placeholder="..." />
+                <marker date="1405896019975" expanded="true" signature="4919:5215" placeholder="..." />
+                <marker date="1405896019975" expanded="true" signature="4919:4957" placeholder="..." />
+                <marker date="1405896019975" expanded="true" signature="4919:4957" placeholder="..." />
+                <marker date="1405896019975" expanded="true" signature="4932:5206" placeholder="..." />
+                <marker date="1405896019975" expanded="true" signature="4932:5206" placeholder="..." />
+                <marker date="1405896019975" expanded="true" signature="4932:5206" placeholder="..." />
+                <marker date="1405896019975" expanded="true" signature="4932:4957" placeholder="..." />
+                <marker date="1405896019975" expanded="true" signature="4932:4957" placeholder="..." />
+                <marker date="1405896019975" expanded="true" signature="4932:4957" placeholder="..." />
+                <marker date="1405896019975" expanded="true" signature="5703:5763" placeholder="..." />
+                <marker date="1405896019975" expanded="true" signature="5703:5763" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -46,30 +128,32 @@
       <list>
         <option value="$PROJECT_DIR$/min/empresa/articulo_ver.php" />
         <option value="$PROJECT_DIR$/css/stylesheet.css" />
-        <option value="$PROJECT_DIR$/min/empresa/empresa.php" />
         <option value="$PROJECT_DIR$/cargo_mod.php" />
         <option value="$PROJECT_DIR$/min/articulo/articulo_ver.php" />
         <option value="$PROJECT_DIR$/empleados_mod.php" />
         <option value="$PROJECT_DIR$/min/empresa/empresa_ver.php" />
         <option value="$PROJECT_DIR$/min/articulo/articulo_mod.php" />
-        <option value="$PROJECT_DIR$/min/until/SubirFoto.php" />
         <option value="$PROJECT_DIR$/min/articulo/articulo.php" />
         <option value="$PROJECT_DIR$/min/materiales_suministros/materiales_suministro.php" />
         <option value="$PROJECT_DIR$/min/uso_consumo/uso_consumo_ver.php" />
         <option value="$PROJECT_DIR$/min/uso_consumo/uso_consumo.php" />
+        <option value="$PROJECT_DIR$/min_menu.html" />
+        <option value="$PROJECT_DIR$/min/inventario/inventario_ver.php" />
         <option value="$PROJECT_DIR$/min/compras/compras_ver.php" />
         <option value="$PROJECT_DIR$/min/compras/compras.php" />
-        <option value="$PROJECT_DIR$/min/inventario/inventario_ver.php" />
-        <option value="$PROJECT_DIR$/min_menu.html" />
+        <option value="$PROJECT_DIR$/db.php" />
+        <option value="$PROJECT_DIR$/min/empresa/empresa.php" />
+        <option value="$PROJECT_DIR$/min/until/SubirFoto.php" />
         <option value="$PROJECT_DIR$/min/inventario/inventario.php" />
       </list>
     </option>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="Unnamed" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="167" />
-    <option name="width" value="1146" />
-    <option name="height" value="935" />
+    <option name="x" value="-1" />
+    <option name="y" value="27" />
+    <option name="width" value="1282" />
+    <option name="height" value="998" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -147,6 +231,28 @@
               <option name="myItemId" value="min" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="until" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sicap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sicap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tipo_inventario" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -179,6 +285,38 @@
               <option name="myItemId" value="min" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sicap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sicap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="empresa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sicap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sicap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="compras" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -193,13 +331,26 @@
     <property name="dynamic.classpath" value="false" />
     <property name="SearchEverywhereHistory" value="" />
     <property name="FullScreen" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../php/bin" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/min/tipo_inventario" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Script.empresa.php">
+    <configuration default="false" name="empresa.php" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/sicap/min/empresa/empresa.php">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="empresa.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/min/empresa/empresa.php">
+      <RunnerSettings RunnerId="PhpScriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="PhpScriptDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -219,9 +370,35 @@
       <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
-    <list size="0" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.empresa.php" />
+      <item index="1" class="java.lang.String" itemvalue="PHP Script.empresa.php" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.empresa.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.empresa.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="15970728-1ab1-4c6b-9a4d-147151d75c7b" name="Default" comment="" />
@@ -231,7 +408,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="167" width="1146" height="935" extended-state="0" />
+    <frame x="-1" y="27" width="1282" height="998" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -239,8 +416,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26261762" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24935733" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21846434" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32984293" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17235772" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39921466" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -268,7 +446,9 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="6" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/min_menu.html">
@@ -280,7 +460,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/min/until/SubirFoto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="32" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="846" />
+        <state line="19" column="32" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="846">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/min_menu.html">
@@ -292,7 +474,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/min/until/SubirFoto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="32" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="846" />
+        <state line="19" column="32" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="846">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/min_menu.html">
@@ -384,19 +568,11 @@
         <state line="2" column="18" selection-start="25" selection-end="25" vertical-scroll-proportion="0.06153846" vertical-offset="0" max-vertical-offset="6498" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/min/until/SubirFoto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="2" selection-start="2505" selection-end="2505" vertical-scroll-proportion="3.747541" vertical-offset="0" max-vertical-offset="2394" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/min/empresa/empresa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="30" selection-start="937" selection-end="937" vertical-scroll-proportion="1.0153847" vertical-offset="0" max-vertical-offset="3132" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apartado.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="81" selection-start="3224" selection-end="3297" vertical-scroll-proportion="0.34774774" vertical-offset="869" max-vertical-offset="2304" />
+        <state line="59" column="81" selection-start="3224" selection-end="3297" vertical-scroll-proportion="0.34774774" vertical-offset="869" max-vertical-offset="2304">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/min_menu.html">
@@ -406,11 +582,137 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/min/compras/compras_ver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="140" selection-start="2130" selection-end="2130" vertical-scroll-proportion="-14.0" vertical-offset="324" max-vertical-offset="1512">
+          <folding>
+            <marker date="1405893724886" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..min_articulos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="61" selection-start="105" selection-end="105" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="288">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/min/inventario/inventario_ver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="49" selection-start="1560" selection-end="1560" vertical-scroll-proportion="-0.95" vertical-offset="483" max-vertical-offset="1512">
+          <folding>
+            <marker date="1405893479193" expanded="true" signature="2597:2624" placeholder="SELECT * FRO..min_articulos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/min/empresa/empresa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="38" selection-start="4650" selection-end="4650" vertical-scroll-proportion="-8.55" vertical-offset="1683" max-vertical-offset="3204">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1405896019975" expanded="true" signature="528:636" placeholder="insert into ..." />
+            <marker date="1405896019975" expanded="true" signature="882:1001" placeholder="insert into ..." />
+            <marker date="1405896019975" expanded="true" signature="4351:4384" placeholder="SELECT tipo ..min_tipo_empresa..." />
+            <marker date="1405896019975" expanded="true" signature="4722:4797" placeholder="..." />
+            <marker date="1405896019975" expanded="true" signature="4722:4797" placeholder="..." />
+            <marker date="1405896019975" expanded="true" signature="4722:4797" placeholder="..." />
+            <marker date="1405896019975" expanded="true" signature="4919:5215" placeholder="..." />
+            <marker date="1405896019975" expanded="true" signature="4919:5215" placeholder="..." />
+            <marker date="1405896019975" expanded="true" signature="4919:5215" placeholder="..." />
+            <marker date="1405896019975" expanded="true" signature="4919:4957" placeholder="..." />
+            <marker date="1405896019975" expanded="true" signature="4919:4957" placeholder="..." />
+            <marker date="1405896019975" expanded="true" signature="4932:5206" placeholder="..." />
+            <marker date="1405896019975" expanded="true" signature="4932:5206" placeholder="..." />
+            <marker date="1405896019975" expanded="true" signature="4932:5206" placeholder="..." />
+            <marker date="1405896019975" expanded="true" signature="4932:4957" placeholder="..." />
+            <marker date="1405896019975" expanded="true" signature="4932:4957" placeholder="..." />
+            <marker date="1405896019975" expanded="true" signature="4932:4957" placeholder="..." />
+            <marker date="1405896019975" expanded="true" signature="5703:5763" placeholder="..." />
+            <marker date="1405896019975" expanded="true" signature="5703:5763" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/min/compras/compras.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="140" selection-start="2871" selection-end="2871" vertical-scroll-proportion="-13.2" vertical-offset="0" max-vertical-offset="3384">
+          <folding>
+            <marker date="1405893763718" expanded="true" signature="8503:8665" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aporteempleado.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beneficio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.2503618" vertical-offset="173" max-vertical-offset="972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/empleados_ver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.08144797" vertical-offset="54" max-vertical-offset="2538">
+          <folding>
+            <marker date="1405363424000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..mrh_empleado..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/empleados.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.40723982" vertical-offset="270" max-vertical-offset="5454">
+          <folding>
+            <marker date="1405430988000" expanded="true" signature="-1:-1" placeholder="select * fro..mrh_cargo..." />
+            <marker date="1405430988000" expanded="true" signature="-1:-1" placeholder="select * fro..mrh_departamento..." />
+            <marker date="1405430988000" expanded="true" signature="-1:-1" placeholder="select * fro..mrh_gerencia..." />
+            <marker date="1405430988000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jornada_mod.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="20" selection-start="989" selection-end="989" vertical-scroll-proportion="0.78147614" vertical-offset="108" max-vertical-offset="2232">
+          <folding>
+            <marker date="1404053632000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..mrh_jornada..." />
+            <marker date="1404053632000" expanded="true" signature="-1:-1" placeholder="update mrh_j..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/min/until/SubirFoto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="31" selection-start="1592" selection-end="1592" vertical-scroll-proportion="-44.0" vertical-offset="0" max-vertical-offset="2430">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/min/inventario/inventario.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="136" selection-start="2896" selection-end="2896" vertical-scroll-proportion="0.3323217" vertical-offset="555" max-vertical-offset="4590">
+        <state line="87" column="0" selection-start="2665" selection-end="2665" vertical-scroll-proportion="0.38145694" vertical-offset="1278" max-vertical-offset="6264">
           <folding>
-            <marker date="1405893276568" expanded="true" signature="11054:11216" placeholder="insert into ..." />
+            <marker date="1405910797604" expanded="true" signature="1032:1081" placeholder="SELECT codig..mco_unidad..." />
+            <marker date="1405910797604" expanded="true" signature="1627:2977" placeholder="INSERT INTO ..." />
+            <marker date="1405910797604" expanded="true" signature="1627:2129" placeholder="INSERT INTO ..." />
+            <marker date="1405910797604" expanded="true" signature="1627:2129" placeholder="INSERT INTO ..." />
+            <marker date="1405910797604" expanded="true" signature="2679:2847" placeholder="insert into ..." />
+            <marker date="1405910797604" expanded="true" signature="3008:4256" placeholder="..." />
+            <marker date="1405910797604" expanded="true" signature="3008:3020" placeholder="..." />
+            <marker date="1405910797604" expanded="true" signature="3008:3020" placeholder="..." />
+            <marker date="1405910797604" expanded="true" signature="3025:4256" placeholder="..." />
+            <marker date="1405910797604" expanded="true" signature="4175:4256" placeholder="..." />
+            <marker date="1405910797604" expanded="true" signature="4198:4256" placeholder="{...}" />
+            <marker date="1405910797604" expanded="true" signature="7307:7343" placeholder="SELECT tipo ..min_tipo_inventario..." />
+            <marker date="1405910797604" expanded="true" signature="8256:8296" placeholder="SELECT descr..mco_unidad..." />
           </folding>
         </state>
       </provider>

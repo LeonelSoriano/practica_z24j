@@ -3,7 +3,7 @@
 
 class SubirFoto
 {
-	private $_G;
+
     private $_name;
 
 
@@ -64,7 +64,7 @@ class SubirFoto
         if((($this->_type == "image/gif" || $this->_type == "image/jpeg" ||
                     $this->_type == "image/pjpeg") && ($this->_size < 100000)) || $this->_error == 0){
             move_uploaded_file($this->_tmp_name,
-                $this->_nombre_subir);
+                $this->_path . $this->_nombre_subir);
         }else{
             $this->_error = 1;
             echo "ERROR en subir imagen por favor verifique el tipo de archivo o el tamaño";

@@ -37,7 +37,7 @@
                         <div class="dynamicContent" align="left">
                             <!--  <h1>Inicio</h1>-->
                             <!--<p><a href="seleccion_sicap.html" class="main-site">Principal</a></p>-->
-                            <h1><img src="../../images/seleccion_sicap_archivos/image002.jpg" alt="flickr" /><strong>                Módulo de Inventario | Empresa</strong></h1>
+                            <h1><img src="../../images/seleccion_sicap_archivos/image002.jpg" alt="flickr" /><strong>Módulo de Inventario | Compras</strong></h1>
 
                             <table border=none class="tablas-nuevas">
 

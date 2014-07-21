@@ -1,6 +1,108 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
+<?php
+header("Content-Type: text/html;charset=utf-8");
+ini_set('display_errors', 'On');
+ini_set('display_errors', 1);
+
+require_once ('../../db.php');
+include_once("../until/SubirFoto.php");
+
+if (isset($_POST['submit'])){
+
+
+    $subirFoto = new SubirFoto($_FILES['imagen'],'../img_articulos/');
+    $subirFoto->cargarFoto();
+
+    $codigoalias = $_POST['codigoalias'];
+    $nombre = $_POST['nombre'];
+    $proveedor = $_POST['proveedor'];
+    $tipo_inventario = $_POST['inventario'];
+    $unidad_medida = explode("(",$_POST['unidad_medida'])[0];
+    $proveedor = $_POST['proveedor'];
+    $descripcion = $_POST['descripcion'];
+    $existencia_minima = $_POST['existencia_minima'];
+    $existencia_inicial = $_POST['existencia_inicial'];
+    $existencia_maxima = $_POST['existencia_maxima'];
+    $fecha_vencimiento = $_POST['fecha_venciminto'];
+    $fecha_adquisicion = $_POST['fecha_adquisicion'];
+    $imagen = $subirFoto->getNombreSubir();
+    $ubicacion = $_POST['ubicacion'];
+    $observacion = $_POST['observacion'];
+
+
+    $sql ="SELECT codigo FROM mco_unidad where descripcion='" . $unidad_medida . "'";
+
+
+    $result = mysql_query($sql);
+
+    $test = mysql_fetch_array($result);
+
+    if (!$result)
+    {
+        die("Error: Data not found.. de unudades");
+    }
+
+    $unidad_medida_tmp =  $test['codigo'];
+
+
+
+    $sql ="SELECT codigo FROM min_tipo_inventario where tipo='" . $tipo_inventario . "'";
+
+    $result = mysql_query($sql);
+
+    $test = mysql_fetch_array($result);
+
+    if (!$result)
+    {
+        die("Error: Data not found.. de tipo inventario");
+    }
+
+    $tipo_inventario_tmp = $test['codigo'];
+
+
+    $sql = "INSERT INTO min_productos_servicios(codigo_alias,nombre,descripcion,existencia_minima,existencia_maxima,
+            existencia_inicial,fecha_vencimiento,fecha_adquisicion,ubicacion,observacion,mco_unidad,inventario,foto_articulo) VALUES
+           ('$codigoalias','$nombre','$descripcion','$existencia_minima','$existencia_maxima','$existencia_inicial',
+           '$fecha_vencimiento','$fecha_adquisicion','$ubicacion','$observacion','$unidad_medida_tmp','$tipo_inventario_tmp',
+           '$imagen');";
+
+    mysql_query($sql) or die('No se pudo guardar la información. '.mysql_error());
+
+
+    /*guardar a la table de fotos*/
+    $sql = "SELECT codigo FROM min_productos_servicios where foto_articulo='".$imagen."'";
+
+
+    $result = mysql_query($sql);
+
+    $test = mysql_fetch_array($result);
+
+    if (!$result)
+    {
+        die("Error: Data not found..");
+    }
+
+    $codigo_articulo =  $test['codigo'];
+    $imagen_nombre = $subirFoto->getName();
+    $imagen_tipo = $subirFoto->getType();
+    $imagen_tamano = $subirFoto->getSize();
+
+
+    $sql = "insert into min_imagen(nombre_subir,codigo_min_articulos,name,type,size) values ('$imagen','$codigo_articulo',
+        '$imagen_nombre','$imagen_tipo','$imagen_tamano')";
+
+    $result = mysql_query($sql) or die('No se pudo guardar la información. '.mysql_error());
+
+    echo "Registro Almacenado";
+
+}
+
+?>
+
+
+
+<!DOCTYPE html>
+<html>
+<head lang="es">
     <title>SICAP | Sistema Integral de Costos</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="author" content="Tomas Bagdanavicius, http://www.lwis.net/free-css-drop-down-menu/" />
@@ -16,6 +118,7 @@
     <script>
         $(function() {
             $( "#datepicker1" ).datepicker({ dateFormat: 'yy-mm-dd' });
+            $( "#datepicker2" ).datepicker({ dateFormat: 'yy-mm-dd' });
         });
     </script>
     <!-- Beginning of compulsory code below -->
@@ -41,7 +144,7 @@
                         <div class="dynamicContent" align="left">
                             <!--  <h1>Inicio</h1>-->
                             <!--<p><a href="seleccion_sicap.html" class="main-site">Principal</a></p>-->
-                            <h1><img src="../../images/seleccion_sicap_archivos/image002.jpg" alt="flickr" /><strong>                Módulo de  Inventario | Producto y servicio</strong></h1>
+                            <h1><img src="../../images/seleccion_sicap_archivos/image002.jpg" alt="flickr" /><strong>                Módulo de  Inventario | Productos y Servicios</strong></h1>
 
                             <!-- Beginning of compulsory code below -->
                             <br/><br/>
@@ -49,7 +152,7 @@
 
                                 <TR>
                                     <TD><label>Código</label></TD>
-                                    <TD><p><input type="text" name="codigo" size="20"></p></TD>
+                                    <TD><p><input type="text" name="codigoalias" size="20"></p></TD>
                                 </TR>
 
                                 <TR>
@@ -67,11 +170,17 @@
                                 </tr>
 
                                 <TR>
-                                    <TD><label>Inventario</label></TD>
+                                    <TD><label>Tipo de Inventario</label></TD>
                                     <TD><p>
                                             <select name="inventario">
-                                                <option value="ejemplo"> ejemplo</option>
-                                                <option value="ejemplo2"> ejemplo2</option>
+                                                <?php
+                                                $result=mysql_query("SELECT tipo FROM min_tipo_inventario");
+                                                while($test = mysql_fetch_array($result)){
+
+                                                    echo"<option>".$test['tipo']."". "</option>";
+                                                }
+
+                                                ?>
                                             </select>
                                     </p></TD>
                                 </TR>
@@ -83,20 +192,19 @@
                                     <td>
                                         <p>
                                             <select name="unidad_medida" >
-                                                <option value="ejemplo">ejemplo</option>
-                                                <option value="ejemplo">ejemplo</option>
-                                                <option value="ejemplo">ejemplo</option>
+                                                <?php
+
+
+                                                $result=mysql_query("SELECT descripcion,sigla FROM mco_unidad");
+                                                while($test = mysql_fetch_array($result)){
+                                                    $id = $test['codigo'];
+                                                    echo"<option>".$test['descripcion']."  (". $test['sigla'].")". "</option>";
+
+                                                }
+
+                                                ?>
                                             </select>
                                         </p>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <label>Proveedor</label>
-                                    </td>
-                                    <td>
-                                        <p><input type="text" name="proveedor"/></p>
                                     </td>
                                 </tr>
 
@@ -148,7 +256,7 @@
                                     </td>
                                     <td>
                                         <p>
-                                            <input type="text" id="datepicker1" name="fecha_adquisicion">
+                                            <input type="text" id="datepicker2" name="fecha_adquisicion">
                                         </p>
                                     </td>
                                 </tr>
@@ -157,8 +265,11 @@
                                     <td>
                                         <label>Foto del Artículo</label>
                                     </td>
+
                                     <td>
-                                        <p><input type="file" name="imagen" size="19" ></p>
+                                        <p>
+                                            <input type="file" name="imagen" >
+                                        </p>
                                     </td>
                                 </tr>
 
@@ -173,10 +284,10 @@
 
                                 <tr>
                                     <td>
-                                        <label >Observaciónes</label>
+                                        <label >Observación</label>
                                     </td>
                                     <td>
-                                        <textarea rows="4" cols="18">
+                                        <textarea rows="4" cols="18" name="observacion">
 
                                         </textarea>
                                     </td>
@@ -224,24 +335,6 @@
         </div>
         <div align="center" class="pie">SICAP 2014</div>
     </div>
-    <?php
-    if (isset($_POST['submit']))
-    {
-        include 'db.php';
-        $descripcion=$_POST['descripcion'];
-        $dias=$_POST['dias'];
-        $fechavigencia=$_POST['fechavigencia'];
-
-        $sql = "insert into mno_apartado(descripcion,dias,fechavigencia)
-                                                          values('$descripcion','$dias','$fechavigencia')";
-        //echo $sql;
-        //exit;
-        mysql_query($sql) or die('No se pudo guardar la información. '.mysql_error());
-        echo "<script language='JavaScript' type='text/javascript'>";
-        echo "alert('El Registro se ha Guardado');";
-        echo "</script>";
-    }
-    ?>
 
 
 </form>

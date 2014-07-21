@@ -30,6 +30,8 @@ if (isset($_POST['submit']))
     for ( $i = 0 ; $i < count($tipo) ; $i ++) {
 
            $t = utf8_encode( $tipo[$i]);
+
+        $t = str_replace("Ã³", "leonel", $t);
         $sql = "insert into min_tipo_empresa_empresa (nombre_tipo,codigo_alias_empresa)
                     values('$t','$codigoalias');";
 
@@ -79,7 +81,7 @@ if (isset($_POST['submit']))
 <!--<h1><img src="images/seleccion_sicap_archivos/image002.jpg" alt="flickr" />Módulo de Recursos Humanos | Cargo</h1>-->
 <!-- Beginning of compulsory code below -->
 
-<form method="post">
+<form method="post" accept-charset="UTF-8">
 
     <div id="body_bottom_bgd">
         <div id=""> <!--<img src="images/Logo_Inventario.png"/>-->
@@ -109,9 +111,11 @@ if (isset($_POST['submit']))
 
 
        <?php
+       $result = mysql_query("SET NAMES utf8");
         $result=mysql_query("SELECT tipo FROM min_tipo_empresa");
         while($test = mysql_fetch_array($result)){
-            echo "<p><input type='checkbox' name='tipo[]' value='".$test['tipo']. "'/>&nbsp;&nbsp;&nbsp;&nbsp;" .utf8_encode($test['tipo']) ."</p>";
+
+            echo "<p><input type='checkbox' name='tipo[]' value='". utf8_encode($test['tipo']) . "'/>&nbsp;&nbsp;&nbsp;&nbsp;" .utf8_encode($test['tipo']) ."</p>";
             
         }   
        ?>
