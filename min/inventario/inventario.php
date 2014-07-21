@@ -39,7 +39,7 @@ if (isset($_POST['submit'])){
         die("Error: Data not found.. de unudades");
     }
 
-    $unidad_medida_tmp =  $test['codigo'];
+    $unidad_medida_tmp = $test['codigo'];
 
 
 
@@ -58,10 +58,10 @@ if (isset($_POST['submit'])){
 
 
     $sql = "INSERT INTO min_productos_servicios(codigo_alias,nombre,descripcion,existencia_minima,existencia_maxima,
-            existencia_inicial,fecha_vencimiento,fecha_adquisicion,ubicacion,observacion,mco_unidad,inventario,foto_articulo) VALUES
-           ('$codigoalias','$nombre','$descripcion','$existencia_minima','$existencia_maxima','$existencia_inicial',
-           '$fecha_vencimiento','$fecha_adquisicion','$ubicacion','$observacion','$unidad_medida_tmp','$tipo_inventario_tmp',
-           '$imagen');";
+existencia_inicial,fecha_vencimiento,fecha_adquisicion,ubicacion,observacion,mco_unidad,inventario,foto_articulo) VALUES
+('$codigoalias','$nombre','$descripcion','$existencia_minima','$existencia_maxima','$existencia_inicial',
+'$fecha_vencimiento','$fecha_adquisicion','$ubicacion','$observacion','$unidad_medida_tmp','$tipo_inventario_tmp',
+'$imagen');";
 
     mysql_query($sql) or die('No se pudo guardar la información. '.mysql_error());
 
@@ -79,14 +79,14 @@ if (isset($_POST['submit'])){
         die("Error: Data not found..");
     }
 
-    $codigo_articulo =  $test['codigo'];
+    $codigo_articulo = $test['codigo'];
     $imagen_nombre = $subirFoto->getName();
     $imagen_tipo = $subirFoto->getType();
     $imagen_tamano = $subirFoto->getSize();
 
 
     $sql = "insert into min_imagen(nombre_subir,codigo_min_articulos,name,type,size) values ('$imagen','$codigo_articulo',
-        '$imagen_nombre','$imagen_tipo','$imagen_tamano')";
+'$imagen_nombre','$imagen_tipo','$imagen_tamano')";
 
     $result = mysql_query($sql) or die('No se pudo guardar la información. '.mysql_error());
 
@@ -129,210 +129,210 @@ if (isset($_POST['submit'])){
 <!--<h1><img src="images/seleccion_sicap_archivos/image002.jpg" alt="flickr" />Módulo de Recursos Humanos | Cargo</h1>-->
 <!-- Beginning of compulsory code below -->
 <form method="post" enctype="multipart/form-data">
-    <div id="body_bottom_bgd">
-        <div id=""> <!--<img src="images/Logo_Inventario.png"/>-->
-            <!--</div>-->                <!-- Menu -->
-            <!--  ?php include 'include/nav.php'; ?>-->
-            <div align="justify" id="right_col" >
-                <div id="header">
-                </div>
-                <div id="">
-                    <div id="firefoxbug"><!-- firefoxbug -->
-                        <!-- <div id="blue_line"></div>-->
-                        <div class="dynamicContent" align="left">
-                            <!--  <h1>Inicio</h1>-->
-                            <!--<p><a href="seleccion_sicap.html" class="main-site">Principal</a></p>-->
-                            <h1><img src="../../images/seleccion_sicap_archivos/image002.jpg" alt="flickr" /><strong>                Módulo de  Inventario | Productos y Servicios</strong></h1>
-
-                            <!-- Beginning of compulsory code below -->
-                            <br/><br/>
-                            <TABLE BORDER="0" CELLSPACING="4" WIDTH="500">
-
-                                <TR>
-                                    <TD><label>Código</label></TD>
-                                    <TD><p><input type="text" name="codigoalias" size="20"></p></TD>
-                                </TR>
-
-                                <TR>
-                                    <TD><label>Nombre de Artículo</label></TD>
-                                    <TD><p><input type="text" name="nombre" size="20"></p></TD>
-                                </TR>
-
-                                <tr>
-                                    <td>
-                                        <label >Proveedor</label>
-                                    </td>
-                                    <td>
-                                        <p><input type="text" name="proveedor" size="20"/></p>
-                                    </td>
-                                </tr>
-
-                                <TR>
-                                    <TD><label>Tipo de Inventario</label></TD>
-                                    <TD><p>
-                                            <select name="inventario">
-                                                <?php
-                                                $result=mysql_query("SELECT tipo FROM min_tipo_inventario");
-                                                while($test = mysql_fetch_array($result)){
-
-                                                    echo"<option>".$test['tipo']."". "</option>";
-                                                }
-
-                                                ?>
-                                            </select>
-                                    </p></TD>
-                                </TR>
-
-                                <tr>
-                                    <td>
-                                        <label >Unidad de Medida</label>
-                                    </td>
-                                    <td>
-                                        <p>
-                                            <select name="unidad_medida" >
-                                                <?php
-
-
-                                                $result=mysql_query("SELECT descripcion,sigla FROM mco_unidad");
-                                                while($test = mysql_fetch_array($result)){
-                                                    $id = $test['codigo'];
-                                                    echo"<option>".$test['descripcion']."  (". $test['sigla'].")". "</option>";
-
-                                                }
-
-                                                ?>
-                                            </select>
-                                        </p>
-                                    </td>
-                                </tr>
-
-
-                                <TR>
-                                    <TD><label> Descripción </label></TD>
-                                    <TD><p><input type="text" name="descripcion"></p></TD>
-                                </TR>
-
-                                <tr>
-                                    <td><label for="">Existencia Mínima</label>
-                                    <td>
-                                        <p><input type="text" name="existencia_minima"/></p>
-                                    </td>
-                                    </td>
-                                </tr>
-
-
-                                <tr>
-                                    <td><label for="">Existencia Inicial</label>
-                                    <td>
-                                        <p><input type="text" name="existencia_inicial"/></p>
-                                    </td>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td><label for="">Existencia Maxima</label>
-                                    <td>
-                                        <p><input type="text" name="existencia_maxima"/></p>
-                                    </td>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <label >Fecha de Vencimiento</label>
-                                    </td>
-                                    <td>
-                                        <p>
-                                            <input type="text" id="datepicker1" name="fecha_venciminto">
-                                        </p>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <label >Fecha de Adquisición</label>
-                                    </td>
-                                    <td>
-                                        <p>
-                                            <input type="text" id="datepicker2" name="fecha_adquisicion">
-                                        </p>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <label>Foto del Artículo</label>
-                                    </td>
-
-                                    <td>
-                                        <p>
-                                            <input type="file" name="imagen" >
-                                        </p>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <label >Ubicación</label>
-                                    </td>
-                                    <td>
-                                        <p><input type="text" name="ubicacion"/></p>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <label >Observación</label>
-                                    </td>
-                                    <td>
-                                        <textarea rows="4" cols="18" name="observacion">
-
-                                        </textarea>
-                                    </td>
-                                </tr>
-
-
-
-                            </TABLE>
-
-                            <br/>
-
-                            <table>
-                                <tr>
-                                    <td>
-                                        <input type="submit" value="Guardar datos" name="submit">
-                                    </td>
-                                    <td>
-                                        <a href="inventario_ver.php"><input type="button" value="Ver datos"></a>
-                                    </td>
-                                    <td>
-                                        <a href="../../min_menu.html"><input type="button" value="Atras"></a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <!-- / END -->
-                            <p></p>
-                        </div>
-                    </div><!--end firefoxbug-->
-                </div><!--end left_bgd-->
-
-            </div>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>
-                <!--end right_col-->
-            </p>
-            <p>&nbsp; </p>
-            <div class="clearboth"></div>
+<div id="body_bottom_bgd">
+<div id=""> <!--<img src="images/Logo_Inventario.png"/>-->
+    <!--</div>--> <!-- Menu -->
+    <!-- ?php include 'include/nav.php'; ?>-->
+    <div align="justify" id="right_col" >
+        <div id="header">
         </div>
-        <div align="center" class="pie">SICAP 2014</div>
+        <div id="">
+            <div id="firefoxbug"><!-- firefoxbug -->
+                <!-- <div id="blue_line"></div>-->
+                <div class="dynamicContent" align="left">
+                    <!-- <h1>Inicio</h1>-->
+                    <!--<p><a href="seleccion_sicap.html" class="main-site">Principal</a></p>-->
+                    <h1><img src="../../images/seleccion_sicap_archivos/image002.jpg" alt="flickr" /><strong> Módulo de Inventario | Productos y Servicios</strong></h1>
+
+                    <!-- Beginning of compulsory code below -->
+                    <br/><br/>
+                    <TABLE BORDER="0" CELLSPACING="4" WIDTH="500">
+
+                        <TR>
+                            <TD><label>Código</label></TD>
+                            <TD><p><input type="text" name="codigoalias" size="20"></p></TD>
+                        </TR>
+
+                        <TR>
+                            <TD><label>Nombre de Artículo</label></TD>
+                            <TD><p><input type="text" name="nombre" size="20"></p></TD>
+                        </TR>
+
+                        <tr>
+                            <td>
+                                <label >Proveedor</label>
+                            </td>
+                            <td>
+                                <p><input type="text" name="proveedor" size="20"/></p>
+                            </td>
+                        </tr>
+
+                        <TR>
+                            <TD><label>Tipo de Inventario</label></TD>
+                            <TD><p>
+                                    <select name="inventario">
+                                        <?php
+                                        $result=mysql_query("SELECT tipo FROM min_tipo_inventario");
+                                        while($test = mysql_fetch_array($result)){
+
+                                            echo"<option>".$test['tipo']."". "</option>";
+                                        }
+
+                                        ?>
+                                    </select>
+                                </p></TD>
+                        </TR>
+
+                        <tr>
+                            <td>
+                                <label >Unidad de Medida</label>
+                            </td>
+                            <td>
+                                <p>
+                                    <select name="unidad_medida" >
+                                        <?php
+
+
+                                        $result=mysql_query("SELECT descripcion,sigla FROM mco_unidad");
+                                        while($test = mysql_fetch_array($result)){
+                                            $id = $test['codigo'];
+                                            echo"<option>".$test['descripcion']." (". $test['sigla'].")". "</option>";
+
+                                        }
+
+                                        ?>
+                                    </select>
+                                </p>
+                            </td>
+                        </tr>
+
+
+                        <TR>
+                            <TD><label> Descripción </label></TD>
+                            <TD><p><input type="text" name="descripcion"></p></TD>
+                        </TR>
+
+                        <tr>
+                            <td><label for="">Existencia Mínima</label>
+                            <td>
+                                <p><input type="text" name="existencia_minima"/></p>
+                            </td>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td><label for="">Existencia Inicial</label>
+                            <td>
+                                <p><input type="text" name="existencia_inicial"/></p>
+                            </td>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="">Existencia Maxima</label>
+                            <td>
+                                <p><input type="text" name="existencia_maxima"/></p>
+                            </td>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label >Fecha de Vencimiento</label>
+                            </td>
+                            <td>
+                                <p>
+                                    <input type="text" id="datepicker1" name="fecha_venciminto">
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label >Fecha de Adquisición</label>
+                            </td>
+                            <td>
+                                <p>
+                                    <input type="text" id="datepicker2" name="fecha_adquisicion">
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label>Foto del Artículo</label>
+                            </td>
+
+                            <td>
+                                <p>
+                                    <input type="file" name="imagen" >
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label >Ubicación</label>
+                            </td>
+                            <td>
+                                <p><input type="text" name="ubicacion"/></p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label >Observación</label>
+                            </td>
+                            <td>
+                                <textarea rows="4" cols="18" name="observacion">
+
+                                </textarea>
+                            </td>
+                        </tr>
+
+
+
+                    </TABLE>
+
+                    <br/>
+
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Guardar datos" name="submit">
+                            </td>
+                            <td>
+                                <a href="inventario_ver.php"><input type="button" value="Ver datos"></a>
+                            </td>
+                            <td>
+                                <a href="../../min_menu.html"><input type="button" value="Atras"></a>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- / END -->
+                    <p></p>
+                </div>
+            </div><!--end firefoxbug-->
+        </div><!--end left_bgd-->
+
     </div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>
+        <!--end right_col-->
+    </p>
+    <p>&nbsp; </p>
+    <div class="clearboth"></div>
+</div>
+<div align="center" class="pie">SICAP 2014</div>
+</div>
 
 
 </form>

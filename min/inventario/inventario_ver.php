@@ -1,7 +1,6 @@
 <?php
 header("Content-Type: text/html;charset=utf-8");
-ini_set('display_errors', 'On');
-ini_set('display_errors', 1);
+
 
 include("../../db.php");
 
@@ -115,7 +114,7 @@ include("../../db.php");
                                         echo"<td><font color='black'>". $test['ubicacion']. "</font></td>";
                                         echo"<td><font color='black'>". $test['observacion']. "</font></td>";
 
-                                        echo"<td> <a href ='articulo_mod.php?codigo=$id'>Modificar</a>";
+                                        echo"<td> <a href ='inventario_mod.php?codigo=$id'>Modificar</a>";
                                         echo"<td> <a href ='cargo_del.php?codigo=$id'>Borrar</a>";
 
                                         echo "</tr>";
